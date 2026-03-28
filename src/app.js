@@ -6,7 +6,7 @@ import planRoutes from "./routes/plan.routes.js"
 import authRoutes from "./routes/auth.routes.js"
 import dashboardRoutes from "./routes/dashboard.routes.js"
 import analyticsRoutes from "./routes/analytics.routes.js"
-
+import paymentRoutes from "./routes/payment.routes.js"
 
 const app = express();
 
@@ -22,6 +22,7 @@ app.use("/api/gyms", gymRoutes);
 app.use("/api/plans", planRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/analytics", analyticsRoutes);
+app.use("/api/payments", paymentRoutes);
 
 
 
